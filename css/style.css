@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy-UltraLight"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2");
+    src: local("Gilroy-UltraLight"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(32%, 32%, 32%, 0.5);
+}
+
+.header__h1 {
+    margin-bottom: 0;
+    padding-top: 80px;
+    font-size: 45px;
+}
+
+.header__p {
+    max-width: 450px;
+}
+
+.section {
+    height: 450px;
+    padding-top: 20px;
+}
+
+.section-laters {
+    background-color: rgb(250, 186, 103);
+}
+
+.show-box {
+    margin-bottom: 15px;
+    width: 700px;
+    height: 300px;
+    /* background-color: white; */
+}
+
+.btn-dowload {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 10px;
+    transition: .3s all ease-in-out;
+}
+
+.btn-dowload:hover {
+    color: black;
+    background-color: white;
+}
+
+.show-box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff0057, #2196f3);
+}
+
+.show-box-1 h2 {
+    position: relative;
+    display: flex;
+    gap: 60px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.show-box-1 h2 span {
+    position: relative;
+    filter: blur(5px);
+    padding: 0 5px;
+    transition: 0.5s;
+}
+
+.show-box-1 h2 span:hover {
+    filter: blur(0px);
+    transition: 0s;
+}
+
+.show-box-1 h2 span i {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+}
+
+.show-box-1 h2 span:hover i:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 4px;
+    height: 20px;
+    background: white;
+    box-shadow: 0 79px #fff, 62px 79px #fff, 62px 0 #fff;
+}
+
+.show-box-1 h2 span:hover i:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 20px;
+    height: 4px;
+    background: white;
+    box-shadow: 0 94px #fff, 45px 94px #fff, 45px 0 #fff;
+}
+
+.show-box-2 {
+    background-color: #ffb6eb;
+}
